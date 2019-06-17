@@ -147,7 +147,7 @@ Vaultの基本概念を私なりにざっくりと項目にしてみました。
           * [CLI] vault operator seal
     * 例：
       * `secret/my-secret`へのアクセスコントロール(CRUD＋List)
-        *```
+        * ```
 path "secret/my-secret"  
 {
   capabilities = ["create", "read", "update", "delete", "list"]
@@ -155,7 +155,7 @@ path "secret/my-secret"
 ```
 
       * Sealする権限を与える(＊要管理者権限)
-        *```
+        * ```
 path "sys/seal"
 {
   "sudo"
